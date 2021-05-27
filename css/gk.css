@@ -1,157 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
 * {
-  margin: 3px;
+  margin: 0px;
   text-decoration: none;
   padding: 0px;
-}
-
-:root {
-  --navbar-height: 52px;
-  box-shadow: 3px -1px 5px +1px rgb(0 0 0 / 75%);
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
   background-repeat: no-repeat;
 }
-html {
-  /* border: 3px solid whitesmoke; */
-  height: max-content;
-  /* border-bottom: 100%; */
-  margin: 35px 60px;
-  border-radius: 12px;
-  -webkit-box-shadow: -2px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: -3px 1px 5px -1px rgb(0 0 0 / 75%);
-}
 
 #navbar {
   display: flex;
-  position: relative;
+  border-radius: 25px;
   align-items: center;
-  justify-content: left;
-  margin: 34px 261px;
+  justify-content: center;
+  margin: 30px 558px;
+  background-color: #2c2c2c;
+  padding: 7px;
 }
 #navbar ul {
   display: flex;
-}
-#navbar::before {
-  content: "";
-  background-color: #34495e;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  /* opacity: 0.3; */
-  position: absolute;
-  border-radius: 20px;
+  position: relative;
 }
 
 #navbar ul li {
   list-style: none;
   font-size: large;
-  margin-top: 2px;
-  transition-property: transform 300ms ease-in-out 0.3 s;
+  margin: 2px 2px;
 }
 #navbar ul li a {
+  font-weight: bold;
   display: block;
-  padding: 5px 14px;
+  padding: 4px 18px;
   border-radius: 20px;
   color: aliceblue;
+  font-family: "Poppins", sans-serif;
 }
 #navbar ul li a:hover {
   /* transition: all 300ms ease; */
-  background-color: #1abc9c;
-  transform: translateX(8px);
+  background-color: #56c19e;
+  transform: translateX(4px);
+  transition-property: transform 300ms ease-in-out 0.3 s;
   /* transform: scale(1.1); */
-}
-
-.search input {
-  width: 154px;
-  border-radius: 20px;
-  border: none;
-  padding: 4px;
-  position: relative;
-  left: 65px;
-  display: flex;
-
-  /* align-items: flex-end; */
-  /* justify-content: right; */
 }
 
 header {
   display: flex;
   justify-content: left;
 }
-.dot-nav {
-  display: flex;
-  /* background-color: aquamarine; */
-}
-hr {
-  margin: 0px 0px;
-  padding: 0px 0px;
-  border-radius: 20px;
-}
 
-.dots {
-  background-color: black;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  margin: 5px;
-  cursor: pointer;
-
-  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-}
-
-#dot-1 {
-  background-color: #fc6058;
-}
-
-#dot-2 {
-  background-color: #fec02f;
-}
-
-#dot-3 {
-  background-color: #2aca3e;
-}
 #logo img {
   display: flex;
-  position: relative;
-  margin: auto;
-  margin-top: 61px;
-  /* left: 52px; */
+  padding: 0px 117px;
+  border-radius: 45%;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 99px 0px 200px;
+  min-height: 58vh;
 }
 
+.container2 {
+  max-width: 1140px;
+  overflow: auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  color: #1abc9c;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.3rem;
+  font-weight: bold;
+  color: #222222;
   padding: 28px;
 }
-.tab-heading {
-  font-size: 0.8rem;
-  display: block;
-  width: 52px;
-  margin: auto;
-  text-align: center;
+p {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: #212529;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 300;
 }
-section p {
-  display: block;
-  font-size: large;
-  font-family: Arial, Helvetica, sans-serif;
 
-  margin: auto;
-  width: 847px;
-}
-/* utility */
-.text-center {
-  text-align: center;
-}
 .logo {
   display: flex;
   height: 250px;
   position: absolute;
   left: auto;
+}
+.name {
+  padding: 0px 79px;
+}
+.des {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.resume {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.resume ul li a {
+  color: rgba(0, 0, 0, 0.5);
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 25px;
+}
+.intro {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
